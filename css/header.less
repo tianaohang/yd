@@ -1,0 +1,430 @@
+@import "common.less";
+
+//页面顶部
+header {
+  width: 100%;
+}
+.topbar {
+  width: 100%;
+  height: 25px;
+  line-height: 25px;
+  background: #f6f6f6;
+  border-bottom: 1px solid #ececec;
+  font-size: 12px;
+  font-family: "微软雅黑", "宋体";
+}
+
+.topbar a, .topbar a:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #888;
+}
+
+.topbar a:hover, .topbar a:active {
+  color: #25b2fe;
+  text-decoration: none;
+}
+
+.topbarcon {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+// ENGLISH、政企客户
+.topbar .topleft {
+  float: left;
+  > a, a:visited {
+    float: left;
+    border-right: 1px solid #ececec;
+    padding: 0 10px;
+  }
+}
+
+// 登录、手机营业厅、积分商城、关于中国移动
+.topright {
+  float: right;
+  > div, a, span {
+    float: left;
+  }
+  > a {
+    padding: 0 5px;
+  }
+  > span {
+    font-size: 10px;
+    color: #ddd;
+  }
+}
+
+// 登录 手机营业厅
+.rose() {
+  color: #e40077;
+}
+
+.tn() {
+  padding: 0 10px 0 25px;
+  background: 10px center no-repeat;
+}
+
+.hover() {
+  background: #fff 10px center no-repeat;
+  color: #25b2fe;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+}
+
+.topright .dropdown {
+  position: relative;
+  &:hover .dropdown-menu {
+    display: block;
+  }
+  > a.t1 {
+    .tn();
+    background-image: url(../Images/t1-1.png);
+    .rose();
+  }
+  &:hover a.t1 {
+    .hover();
+    background-image: url(../Images/t1-2.png);
+  }
+  > a.t2 {
+    .tn();
+    background-image: url(../Images/t2-1.png);
+  }
+  &:hover a.t2 {
+    .hover();
+    background-image: url(../Images/t2-2.png);
+  }
+}
+
+// 登录、手机营业厅的下拉菜单
+.dropdown .dropdown-menu {
+  position: absolute;
+  z-index: 1000;
+  padding: 18px 0 12px 0;
+  left: -1px;
+  top: 25px;
+  margin-top: 0;
+  border-top: none;
+  background-color: #FFF;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  min-width: 160px;
+  text-align: center;
+  font-size: 14px;
+  display: none;
+  > a {
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #e4e4e4;
+    margin: 5px 15px;
+    color: #25b2fe;
+    &:hover {
+      color: #fff;
+      background: #25b2fe;
+    }
+  }
+}
+
+//logo、搜索框
+.container {
+  width: 1200px;
+  padding: 0;
+  > .headcon {
+    padding: 15px 50px 15px 0;
+    > div {
+      > .logo {
+        float: left;
+        padding-top: 10px;
+      }
+      > .dropdown {
+        float: left;
+        margin: 20px 0 0 20px;
+        > .topcity {
+          cursor: pointer;
+          font-size: 14px;
+          height: 25px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          padding: 0 15px 0 0;
+          background: transparent url(../Images/x.gif) no-repeat right 9px;
+        }
+      }
+    }
+    >.phonenav{
+      margin: 5px 0 0 0;
+      text-align: right;
+      position: static;
+    }
+    > .searchdiv {
+      > .searchbar > .input-group-btn > .btn {
+        border: 0;
+        padding-left: 30px;
+        background: #25b2fe url(../Images/search.png) no-repeat 15px center;
+        color: #fff;
+        width: 85px;
+        border-radius: 3px;
+        margin-left: 0;
+        height: 34px;
+      }
+      > .hot {
+        padding-top: 5px;
+        > a {
+          padding-right: 20px;
+          &:hover{
+            text-decoration:underline;
+          }
+        }
+        >a.rose{
+          .rose();
+          &:hover{
+            color:#0085d0;
+          }
+        }
+      }
+    }
+  }
+}
+
+//navbar
+.navbar {
+  border-radius: 0;
+  background: #e4e4e4;
+  padding: 0;
+  min-height: 40px;
+  position: relative;
+  border: 0;
+  margin-bottom:0;
+  > .navbar-collapse {
+    padding: 0;
+    margin: 0;
+    > .navbar-nav {
+      width: 100%;
+      margin: 0;
+      > li {
+        float: left;
+        border-right: 1px solid #fff;
+        height: 40px;
+        width: 21.5%;
+        background: #eee;
+        > a {
+          text-align: center;
+          padding: 0;
+          line-height: 40px;
+          font-size: 16px;
+          &:hover {
+            background-color: #f3f3f3;
+          }
+          &:hover .dropdown_menu {
+            display: block;
+          }
+        }
+      }
+      > li.active {
+        color: #0085d0;
+        border-top: 2px solid #0085d0;
+        > a {
+          color: #0085d0;
+          font-weight: bold;
+        }
+      }
+      > li.navindex {
+        width: 14%;
+      }
+      > li.dropdown {
+        position: static;
+        &:hover .dropdown-menu {
+          display: block;
+        }
+        > .dropdown-menu {
+          width: 100%;
+          min-width: 100%;
+          left: 0;
+          box-shadow: 0 6px 12px -4px rgba(0, 0, 0, 0.176);
+          padding: 0;
+          z-index: 1000;
+          top: 40px;
+          border: none;
+          > li {
+            float: left;
+            border-right: 1px solid #fff;
+            height: 40px;
+            line-height: 40px;
+            width: 14%;
+            > a {
+              height: 40px;
+              line-height: 40px;
+              &:hover {
+                background: #fff;
+                color: #0085d0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    > .headcon {
+      padding: 15px 20px 15px 0;
+      background: #f6f6f6;
+      margin:0;
+      > div {
+        position: static;
+        > .logo {
+          width: 45%;
+          padding-top: 5px;
+          > img {
+            width: 100%;
+          }
+        }
+        > .dropdown > .topcity {
+          font-size: 16px;
+          margin-top: -12px;
+          float: left;
+        }
+      }
+      > .phonenav {
+        > a {
+          float: none;
+          > img {
+            width: 60%;
+          }
+        }
+        > .navbar-collapse {
+          position: absolute;
+          right: 0;
+          top: 0;
+          z-index: 9999;
+          width: 100%;
+          background: #fff;
+          padding: 10px;
+          min-height:312px;
+          > button {
+            float: right;
+            font-size: 31px;
+            line-height: 1;
+            color: #000;
+            text-shadow: 0 1px 0 #fff;
+            opacity: 0.7;
+            > span {
+              &:hover{
+                opacity: 0.8;
+              }
+            }
+          }
+          > p {
+            float: left;
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            font-size: 16px;
+            text-align: center;
+            > a {
+              color: #31adf7;
+              display: inline-block;
+            }
+          }
+          > ul {
+            float: left;
+            width:100%;
+            > li > a {
+              display: block;
+              font-size: 14px;
+              height: 40px;
+              line-height: 40px;
+              border-top: 1px solid #ebebeb;
+              text-align: left;
+              margin: 0 15px;
+            }
+          }
+        }
+      }
+    }
+    > .navbar {
+      position: relative;
+      border: 1px solid #ececec;
+      border-top: none;
+      padding: 0;
+      top: 0;
+      > div {
+        > .nav {
+          > li {
+            width: 25%;
+            &:hover>a{
+              background: #fff;
+              border-bottom: 2px solid #0085d0;
+              z-index:1000;
+            }
+            > a {
+              font-size: 14px;
+              background: #fff;
+              border-right: 1px solid #ececec;
+            }
+          }
+          > li.active {
+            border-top: 0;
+            width: 25%;
+            > a {
+              color: #0085d0;
+              font-weight: bold;
+              &:hover {
+                background: #EEEEEE;
+                border-bottom: none;
+              }
+            }
+          }
+          > li.dropdown {
+            border-bottom: 1px solid #ebebeb;
+            > .dropdown-menu {
+              width: 100%;
+              min-width: 100%;
+              left: 0;
+              top:43px;
+              > li {
+                float: none;
+                text-align: left;
+                width: 100%;
+                border-right: 0;
+                border-bottom: 1px solid #ebebeb;
+                height: auto;
+                > a {
+                  font-size: 16px;
+                  line-height: 40px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

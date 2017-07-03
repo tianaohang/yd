@@ -1,0 +1,1079 @@
+@import "common.less";
+@import "header.less";
+@import "footer.less";
+
+#main {
+  background: #fff;
+  position: relative;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+//商城商品分类
+.shopclass {
+  float: left;
+  width: 160px;
+  height: 350px;
+  padding: 8px 10px 10px 10px;
+  border: 1px solid #b8d9e9;
+  margin: 5px 10px 0 0;
+  background: #fff;
+  > h1 {
+    font-size: 12px;
+    color: #333;
+    font-weight: normal;
+    text-align: center;
+    padding: 0 0 3px 0;
+    margin: 0;
+    line-height: 180%;
+  }
+  > ul {
+    margin-bottom: 10px;
+    > li {
+      float: left;
+      height: 63px;
+      line-height: 60px;
+      border-top: 1px solid #e9e9e9;
+      width: 100%;
+      > img {
+        float: left;
+        padding: 20px 10px 0 25px;
+      }
+      > a {
+        float: left;
+        font-size: 15px;
+        color: #333;
+      }
+    }
+  }
+  a:hover {
+    color: #0085d0;
+    text-decoration: none;
+  }
+}
+
+//轮播广告
+.banner {
+  float: left;
+  height: 350px;
+  width: 740px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 5px;
+  z-index: 1;
+  > .bs-example {
+    > .carousel {
+      position: relative;
+      > .carousel-inner {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        > .item > a > img {
+          height: 350px;
+          width: 740px;
+          max-width: 740px;
+        }
+        > .carousel-indicators {
+          margin-bottom: 0;
+          bottom: 1px;
+          > li {
+            font: 12px ' Verdana ', ' Arial ';
+            height: 15px;
+            opacity: 0.85;
+            background-color: #ccc;
+            overflow: hidden;
+            text-align: center;
+            width: 15px;
+            border: 0;
+          }
+          > li.active {
+            background-color: #E40077;
+          }
+        }
+      }
+      > a {
+        cursor: pointer;
+        display: block;
+        height: 70px;
+        position: absolute;
+        top: 140px;
+        width: 30px;
+        opacity: 0.3;
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+      > .lbnext {
+        background: url("../Images/lbnextpre.png") no-repeat;
+        left: 0;
+      }
+      > .lbpre {
+        background: url("../Images/lbnextpre.png") no-repeat right 0;
+        right: 0;
+      }
+    }
+  }
+}
+
+//快捷服务区
+.quickbtn {
+  background: #fff;
+  border: 1px solid #dfdfdf;
+  float: right;
+  height: 349px;
+  width: 278px;
+  margin-top: 5px;
+  > .btns {
+    float: left;
+    width: 100%;
+    padding-top: 5px;
+    > ul {
+      width: 100%;
+      float: left;
+      > li {
+        float: left;
+        height: 78px;
+        width: 33%;
+        position: relative;
+        z-index: 1;
+        > a {
+          color: #4e4e4e;
+          cursor: pointer;
+          display: block;
+          width: 80px;
+          height: 77px;
+          left: 50%;
+          margin-left: -40px;
+          padding-top: 55px;
+          position: absolute;
+          text-align: center;
+          text-decoration: none;
+          top: 0;
+        }
+        > a.q0 {
+          background: url("../Images/quickbtn_01_1.gif") no-repeat center 15px;
+          &:hover {
+            background-image: url("../Images/quickbtn_01_2.gif");
+          }
+        }
+        > a.q1 {
+          background: url("../Images/quickbtn_02_1.gif") no-repeat center 15px;
+          &:hover {
+            background-image: url("../Images/quickbtn_02_2.gif");
+          }
+        }
+        > a.q2 {
+          background: url("../Images/quickbtn_03_1.gif") no-repeat center 15px;
+          &:hover {
+            background-image: url("../Images/quickbtn_03_2.gif");
+          }
+        }
+        > a.q3 {
+          background: url("../Images/quickbtn_04_1.gif") no-repeat center 15px;
+          &:hover {
+            background-image: url("../Images/quickbtn_04_2.gif");
+          }
+        }
+        > a.q4 {
+          background: url("../Images/quickbtn_05_1.gif") no-repeat center 15px;
+          &:hover {
+            background-image: url("../Images/quickbtn_05_2.gif");
+          }
+        }
+        > a.q5 {
+          background: url("../Images/quickbtn_06_1.gif") no-repeat center 15px;
+          &:hover {
+            background-image: url("../Images/quickbtn_06_2.gif");
+          }
+        }
+        > .xtip {
+          position: absolute;
+          width: 21px;
+          height: 21px;
+          line-height: 21px;
+          color: rgb(255, 255, 255);
+          text-align: center;
+          right: 18px;
+          top: 5px;
+          z-index: 99;
+          border-radius: 50%;
+          background: rgb(228, 0, 119);
+        }
+      }
+    }
+  }
+  > form > .chongzhi {
+    padding: 20px 10px 10px 10px;
+    width: 100%;
+    float: left;
+    > .czjf {
+      float: left;
+      color: rgb(51, 51, 51);
+      width: 98%;
+      height: 20px;
+      font: bold 14px "微软雅黑";
+      padding: 0 15px;
+      > span {
+        float: right;
+        color: #f00;
+        font-size: 12px;
+      }
+    }
+    > .ins {
+      float: left;
+      border: 1px solid #dadada;
+      border-radius: 3px;
+      height: 36px;
+      width: 235px;
+      padding: 3px 5px;
+      margin: 8px 0 0 12px;
+      position: relative;
+      > .in {
+        border: 0;
+        height: 28px;
+        line-height: 28px;
+        width: 220px;
+        color: #ccc;
+        float: left;
+        position: absolute;
+        left: 5px;
+        outline: none;
+      }
+    }
+    > .insselect {
+      float: left;
+      width: 259px;
+      padding: 10px 0 10px 10px;
+      height: 56px;
+      > a {
+        font-size: 12px;
+        float: left;
+        border: 1px solid #dadada;
+        border-radius: 3px;
+        color: #666;
+        width: 44px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        margin: 0 2px;
+        &:hover {
+          border-radius: 3px;
+          background: #e40077;
+          border: 1px solid #e40077;
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+      a.on {
+        border-radius: 3px;
+        background: #e40077;
+        border: 1px solid #e40077;
+        color: #fff;
+      }
+    }
+    > .czsubmit {
+      float: left;
+      padding-left: 85px;
+      position: relative;
+      > .cz {
+        background: #33acfb;
+        color: #fff;
+        border-radius: 3px;
+        width: 90px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        cursor: pointer;
+        float: left;
+      }
+    }
+  }
+}
+
+//剩下楼层的相同样式
+.indexbox() {
+  float: left;
+  width: 285px;
+  height: 160px;
+  margin-right: 10px;
+  border-bottom: 1px solid #dfdfdf;
+  position: relative;
+  background: #fff;
+  overflow: hidden;
+  > .lianjie1 {
+    display: block;
+    > h1 {
+      font: bold 18px/25px "微软雅黑";
+      color: #333;
+      padding: 6px 0 0 20px;
+      margin: 0;
+    }
+    > h2 {
+      font: normal 14px/20px "微软雅黑";
+      color: #666;
+      padding: 0 0 0 20px;
+      margin: 0;
+    }
+    > h3 {
+      font: normal 12px/20px "微软雅黑";
+      color: #0085d0;
+      padding: 0 0 0 20px;
+      margin: 0;
+    }
+  }
+  > .lianjie2 {
+    display: block;
+    height: 109px;
+    width: 100%;
+  }
+  img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.mainbox() {
+  float: left;
+  width: 100%;
+  margin: 10px 0 0 0;
+  border: 1px solid #dfdfdf;
+}
+
+.indextitle() {
+  float: left;
+  height: 48px;
+  line-height: 48px;
+  border-bottom: 1px solid #dfdfdf;
+  padding: 0 25px;
+  width: 100%;
+  > span {
+    float: left;
+    color: #0085d0;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  > a {
+    float: right;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.indexbox_main() {
+  .indexbox();
+  width: 100%;
+  height: 188px;
+  margin-right: 0;
+}
+
+.indexbox_mian_bg() {
+  .indexbox_main();
+  background: #efefef;
+  > .lianjie1 > h1 {
+    color: #E40077;
+  }
+}
+
+//优惠促销
+.yh() {
+  position: absolute;
+  top: 60px;
+  height: 35px;
+  width: 28px;
+  background: url(../Images/lbnextpre.gif) no-repeat;
+  cursor: pointer;
+  opacity: 0.8;
+  z-index: 99;
+}
+
+.yhcx {
+  float: left;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 15px;
+  height: 180px;
+  background: #dfdfdf;
+  position: relative;
+  > .yhcon {
+    height: 160px;
+    overflow: hidden;
+    position: relative;
+    > .yhnext {
+      .yh();
+      left: 0;
+      background-position: left top;
+    }
+    > .yhpre {
+      .yh();
+      right: 0;
+      background-position: right top;
+    }
+    > .yhgundong {
+      width: 2400px;
+      height: 160px;
+      > .indexbox {
+        .indexbox();
+      }
+    }
+  }
+}
+
+//4G专区
+.fourg {
+  .mainbox();
+  > .row {
+    > .indextitle {
+      .indextitle();
+    }
+    > .titlepic {
+      > a > img {
+        position: absolute;
+        width: 299px;
+      }
+    }
+    > .indexboxcon {
+      float: left;
+      height: 377px;
+      border-left: 1px solid #dfdfdf;
+      > div > a > img.indeximg {
+        position: absolute;
+        bottom: 0;
+      }
+      > div:nth-child(2) {
+        border-bottom: 0;
+        height: 190px;
+      }
+      > .indexbox {
+        .indexbox_main();
+      }
+      > .indexbox_bg {
+        .indexbox_mian_bg();
+      }
+    }
+  }
+}
+
+//买手机
+.buyphone {
+  .mainbox();
+  > .row {
+    > div:last-child {
+      border-right: 0;
+    }
+    > .indextitle {
+      .indextitle();
+    }
+    > .indexbox {
+      .indexbox();
+      width: 25%;
+      height: 380px;
+      border-right: 1px solid #dfdfdf;
+      border-bottom: 0;
+      margin-right: 0;
+      > .lianjie1 {
+        > h2 {
+          padding: 20px 0 0 20px;
+        }
+      }
+      > .price .lianjie2 {
+        display: block;
+        width: 100%;
+        height: 38px;
+        > p {
+          float: left;
+          font: normal 20px/150% "微软雅黑";
+          color: #ef33a2;
+          padding: 10px 0 0 20px;
+        }
+      }
+      > .lianjie3 {
+        display: block;
+        width: 100%;
+        height: 282px;
+        > img {
+          bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+//业务推荐
+.ywtj {
+  .mainbox();
+  > .row {
+    > .indextitle {
+      .indextitle();
+    }
+    > .titlepic {
+      > a > img {
+        position: absolute;
+        width: 299px;
+      }
+    }
+    > .indexboxcon {
+      float: left;
+      height: 377px;
+      border-left: 1px solid #dfdfdf;
+      > div:nth-child(2n) {
+        border-bottom: 0;
+        height: 189px;
+      }
+      > .indexbox {
+        .indexbox();
+        width: 100%;
+        height: 188px;
+        border-bottom: 1px solid #dfdfdf;
+        margin-right: 0;
+        > .lianjie1 {
+          > h1 {
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+//公告
+.indexgg {
+  float: left;
+  font-size: 15px;
+  height: 38px;
+  line-height: 38px;
+  margin: 10px 0 0 0;
+  width: 100%;
+  border: 1px solid #dfdfdf;
+  overflow: hidden;
+  > span {
+    background: url("../Images/indexgg.gif") no-repeat 20px center;
+    color: #666;
+    float: left;
+    padding: 0 0 0 50px;
+  }
+  > ul {
+    float: left;
+    width: 80%;
+    margin: 0;
+    > li {
+      background: url("../Images/icons2014.gif") no-repeat scroll 5px -55px;
+      float: left;
+      padding: 0 10px 0 20px;
+      > a {
+        color: #0085d0;
+        width: 70%;
+        float: left;
+        overflow: hidden;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      > span {
+        color: #CCC;
+        float: left;
+        background: none;
+        padding: 0 0 0 5px;
+        width: 30%;
+      }
+    }
+  }
+  > .qhbtn {
+    cursor: pointer;
+    float: right;
+    padding: 0 20px 0 0;
+    > a {
+      color: rgb(53, 128, 186);
+      text-decoration: none;
+      width: 22px;
+      height: 38px;
+      float: left;
+      font: bold 15px/38px "宋体";
+    }
+  }
+}
+
+//服务相关
+.index-help {
+  float: left;
+  width: 100%;
+  margin: 10px 0 0 0;
+  border: 1px solid #dfdfdf;
+  padding: 20px 0 20px 35px;
+  > .row {
+    > .help-list {
+      width: 20%;
+      float: left;
+      > h2 {
+        color: rgb(102, 102, 102);
+        height: 27px;
+        font: bold 15px ' 微软雅黑 ';
+        margin: 0;
+        > span {
+          padding: 0;
+        }
+      }
+      > .linkgroup {
+        > a {
+          display: block;
+          font-size: 15px;
+          line-height: 180%;
+        }
+      }
+    }
+  }
+}
+
+//响应式部分
+@media (min-width: 1200px) {
+  #main {
+    width: 1200px;
+  }
+}
+
+@media (min-width: 1000px) {
+  //调查问卷浮层
+  .rfu2 {
+    height: 118px;
+    right: -102px;
+    position: fixed;
+    width: 140px;
+    bottom: 180px;
+    z-index: 900;
+    > a > .kf {
+      z-index: 9999;
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  //在线客服
+  .kfu() {
+    cursor: pointer;
+    height: 22px;
+    left: -22px;
+    position: absolute;
+    width: 86px;
+  }
+  .rfu {
+    z-index: 900;
+    width: 140px;
+    height: 142px;
+    position: fixed;
+    right: -102px;
+    bottom: 20px;
+    > .kf {
+      z-index: 9999;
+      position: absolute;
+      left: 0;
+    }
+    > .cjwt {
+      .kfu();
+      top: 35px;
+    }
+    > .zxzx {
+      .kfu();
+      top: 65px;
+    }
+    > .tsjy {
+      .kfu();
+      top: 95px;
+    }
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 769px) {
+  .col-md-3 {
+    width: 25%;
+  }
+
+  //4G专区、业务推荐
+  .fourg, .ywtj {
+    > .row {
+      > .titlepic {
+        > a {
+          > img {
+            left: -25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 999px) {
+  .rfu2, .rfu {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  #main {
+    width: 1020px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+
+  #main {
+    width: 100%;
+  }
+
+  //轮播广告
+  .banner {
+    width: 100%;
+    height: auto;
+    > .bs-example {
+      > .carousel {
+        > .carousel-inner {
+          > .item > a > img {
+            width: 100%;
+            max-width: 200%;
+            margin-left: 0;
+            height: auto;
+          }
+          > .carousel-indicators {
+            > li {
+              width: 9px;
+              height: 9px;
+            }
+          }
+        }
+        > a {
+          top: 50%;
+          margin-top: -35px;
+        }
+      }
+    }
+  }
+
+  //快捷服务区
+  .quickbtn {
+    float: left;
+    width: 100%;
+    height: auto;
+    border: 0;
+    margin: 0;
+    > .btns {
+      width: 100%;
+      padding-top: 0;
+      border-bottom: 1px solid #f4f4f4;
+      border-right: 0;
+      > ul > li {
+        width: 16%;
+        height: 100px;
+        > a {
+          width: 100%;
+          height: 100px;
+          left: 0;
+          margin-left: 0;
+          font-size: 11px;
+        }
+      }
+    }
+    > form > .chongzhi {
+      width: 100%;
+      padding: 0;
+      > .czjf {
+        padding-top: 0;
+        height: 36px;
+        line-height: 36px;
+        float: none;
+        > a {
+          font-size: 24px;
+          font-weight: normal;
+          color: #333;
+        }
+        > span {
+          color: #e40077;
+          font-size: 14px;
+        }
+      }
+      > .ins {
+        float: none;
+        height: 56px;
+        width: 95%;
+        padding: 3px 5px;
+        margin: 8px 0 0 9px;
+        position: relative;
+        > .in {
+          height: 50px;
+          width: 95%;
+          font-size: 16px;
+        }
+      }
+      > .insselect {
+        width: 99%;
+        height: 75px;
+        margin-left: 2px;
+        > a {
+          height: 55px;
+          line-height: 55px;
+          width: 18%;
+          font-size: 14px;
+          margin: 0 3px 0 0;
+        }
+      }
+      > .czsubmit {
+        padding: 0;
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        > .cz {
+          float: none;
+          margin: 0 auto;
+          width: 95%;
+          font-size: 22px;
+          height: 55px;
+        }
+      }
+    }
+  }
+
+  //优惠促销
+  .yhcx {
+    height: 140px;
+    .yhcon {
+      height: 120px;
+      width: 100%;
+      > .yhnext {
+        top: 40px;
+      }
+      > .yhpre {
+        top: 40px;
+      }
+      > .yhgundong {
+        width: 2400px;
+        height: 120px;
+        > .indexbox {
+          width: 200px;
+          height: 120px;
+          > .lianjie1 {
+            > h1 {
+              font: bold 14px/150% "微软雅黑";
+              padding: 3px 0 0 10px;
+            }
+            > h2 {
+              font: 12px/150% "微软雅黑";
+              padding: 0 0 0 10px;
+            }
+          }
+          > .lianjie2 {
+            display: block;
+            height: 54px;
+            width: 100%;
+            > img {
+              width: 60%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //4G专区、业务推荐
+  .fourg, .ywtj {
+    border-bottom: 0;
+    margin: 0;
+    > .row {
+      > .indextitle {
+        border-top: 0;
+      }
+      > .titlepic {
+        height: 280px;
+        > a {
+          > img {
+            width: 100%;
+            position: inherit;
+            height: 280px;
+          }
+        }
+      }
+      > .indexboxcon {
+        height: 280px;
+        div:nth-child(2) {
+          height: 140px;
+          border-bottom: 1px solid #dfdfdf;
+        }
+        > .indexbox, .indexbox_bg {
+          height: 140px;
+          > .lianjie1 {
+            > h1 {
+              font: bold 14px/150% "微软雅黑";
+              padding: 3px 0 0 10px;
+            }
+            > h2 {
+              font: 12px/150% "微软雅黑";
+              padding: 0 0 0 10px;
+            }
+          }
+          > .lianjie2 {
+            height: 50px;
+            > img {
+              width: 60%;
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //买手机
+  .buyphone {
+    margin: 0;
+    border-bottom: 0;
+    border-top: 0;
+    > .row {
+      > .indextitle {
+        border-top: 0;
+      }
+      > .indexbox {
+        width: 50%;
+        height: 250px;
+        border-bottom: 1px solid #DFDFDF;
+        border-right: 0;
+        > .lianjie1 {
+          > h2 {
+            padding: 10px 0 0 10px;
+            font-size: 14px;
+          }
+          > h3 {
+            padding: 0 0 0 10px;
+            font-size: 10px;
+          }
+        }
+        > .price {
+          > .lianjie2 {
+            > p {
+              font-size: 12px;
+              padding: 5px 0 0 10px;
+            }
+          }
+        }
+        > .lianjie3 {
+          width: 100%;
+          height: 100px;
+          > img {
+            width: 60%;
+          }
+        }
+      }
+      > .indexbox:nth-child(2n) {
+        border-right: 1px solid #DFDFDF;
+      }
+    }
+  }
+
+  //公告
+  .indexgg {
+    margin: 0;
+    border: 0;
+    > span {
+      color: #666;
+      float: left;
+      padding: 0 0 0 30px;
+      font-size: 14px;
+      background: url("../Images/volume-pad.png") no-repeat 10px center;
+      background-size: 20%;
+    }
+    > ul {
+      width: 70%;
+      > li {
+        background: none;
+        padding: 0 10px 0 10px;
+        > a {
+          height: 38px;
+          //超出文本范围的用“...”代替
+          white-space:nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+    > .qhbtn {
+      padding: 0 10px 0 0;
+      > .left {
+        display: none;
+      }
+      > .right {
+        color: #dcdcdc;
+        font-size: 24px;
+      }
+    }
+  }
+
+  //服务相关
+  .index-help {
+    padding: 0 10px;
+    border: 0;
+    margin: 0;
+    > .row {
+      > .help-list {
+        width: 100%;
+        &:last-child {
+          border-bottom: 1px solid #dfdfdf;
+        }
+        > h2 {
+          border-top: 1px solid #dfdfdf;
+          line-height: 3em;
+          height: 3em;
+          font-size: 15px;
+          font-weight: normal;
+          color: #333;
+          > a {
+            text-align: right;
+            font-size: 30px;
+            color: #dcdcdc;
+            text-decoration: none;
+            padding: 0;
+          }
+        }
+        > .linkgroup {
+          display: none;
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 767px) and (min-width: 481px) {
+  //4G专区、业务推荐
+  .fourg, .ywtj {
+    > .row {
+      > .titlepic {
+        height: 320px;
+        > a {
+          > img {
+            height: 320px;
+          }
+        }
+      }
+      > .indexboxcon {
+        height: 320px;
+        div:nth-child(2) {
+          height: 160px;
+        }
+        > .indexbox, .indexbox_bg {
+          height: 160px;
+        }
+      }
+    }
+  }
+
+  //买手机
+  .buyphone {
+    > .row {
+      > .indexbox {
+        > .lianjie3 {
+          > img {
+            width: 35%;
+          }
+        }
+      }
+    }
+  }
+}

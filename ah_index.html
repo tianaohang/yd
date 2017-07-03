@@ -1,0 +1,763 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>网上营业厅_中国移动通信集团安徽有限公司</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<header>
+  <div class="top">
+    <div class="top-box">
+      <!-- ENGLISH、政企客户 -->
+      <div class="topleft">
+        <a href="#">ENGLISH</a>
+        <a href="#">政企客户</a>
+      </div>
+      <!-- 登录、手机营业厅、积分商城、关于中国移动 -->
+      <div class="topright">
+        <div class="dropdown">
+          <a class="t1">登录</a>
+
+          <div class="dropdown-menu">
+            <a href="#">登录移动商城</a>
+            <a href="#">登录网上营业厅</a>
+          </div>
+        </div>
+        <span>|</span>
+
+        <div class="dropdown">
+          <a class="t2">手机营业厅</a>
+
+          <div class="dropdown-menu">
+            <img src="Images/ewm.jpg">
+
+            <p>扫一扫，随时查话费！</p>
+          </div>
+        </div>
+        <span>|</span>
+        <a href="#" id="tempBar3">积分商城</a>
+        <span>|</span>
+        <a href="#" id="tempBar4">关于中国移动</a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="container-box">
+        <!-- logo -->
+        <div class="contleft">
+          <a href="#"><img src="Images/logo.png"></a>
+
+          <div class="dropdown">
+            <div id="dropdown1">合肥</div>
+            <ul class="dropdown-menu" id="ahCity" style="display:none">
+              <li>
+                <span>安徽</span>&nbsp;
+                <a href="#">[返回全部省份]</a>
+              </li>
+              <li>
+                <dl>
+                  <dd><a href="#">合肥</a></dd>
+                  <dd><a href="#">滁州</a></dd>
+                  <dd><a href="#">蚌埠</a></dd>
+                  <dd><a href="#">芜湖</a></dd>
+                  <dd><a href="#">淮南</a></dd>
+                  <dd><a href="#">马鞍山</a></dd>
+                  <dd><a href="#">安庆</a></dd>
+                  <dd><a href="#">宿州</a></dd>
+                  <dd><a href="#">阜阳</a></dd>
+                  <dd><a href="#">黄山</a></dd>
+                  <dd><a href="#">淮北</a></dd>
+                  <dd><a href="#">铜陵</a></dd>
+                  <dd><a href="#">宣城</a></dd>
+                  <dd><a href="#">六安</a></dd>
+                  <dd><a href="#">池州</a></dd>
+                  <dd><a href="#">亳州</a></dd>
+                </dl>
+              </li>
+            </ul>
+            <ul class="dropdown-menu" id="allProv"></ul>
+          </div>
+        </div>
+        <!-- 搜索框 -->
+        <div class="contright">
+          <div class="search">
+            <input type="text" value="服务密码重置" title="关键字必须至少有一个汉字或英文字母" class="searchbar"
+                   onfocus="javascript:if(this.value=='服务密码重置'){this.value=''} this.style.color = '#333';"
+                   onblur="javascript:if(this.value==''){this.value='服务密码重置'} this.style.color ='#ccc'" maxlength="20">
+							<span>
+								<input type="submit" id="searchbtn" class="btn" value="搜索">
+							</span>
+          </div>
+          <div class="hot">
+            <a href="#" id="hotword0" class="rose">国漫专区</a>
+            <a href="#" id="hotword1">选好入网</a>
+            <a href="#" id="hotword2">通话记录查询</a>
+            <a href="#" id="hotword3">家庭计划</a>
+            <a href="#" id="hotword4">亲情号码设置</a>
+            <a href="#" id="hotword5">换卡</a>
+          </div>
+        </div>
+      </div>
+      <!-- nav -->
+      <div class="topnav">
+        <ul class="nav">
+          <li class="navindex">
+            <a href="#">首页</a>
+          </li>
+          <li class="dropdown">
+            <a href="#">移动商城</a>
+
+            <div class="dropdown-menu">
+              <p><a href="#">买手机</a></p>
+
+              <p><a href="#">办套餐</a></p>
+
+              <p><a href="#">办业务</a></p>
+
+              <p><a href="#">调配件</a></p>
+
+              <p><a href="#">立即充值</a></p>
+
+              <p><a href="#">个人中心</a></p>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">我的移动</a>
+
+            <div class="dropdown-menu">
+              <p><a href="#">我的话费</a></p>
+
+              <p><a href="#">我的详单</a></p>
+
+              <p><a href="#">我的账单</a></p>
+
+              <p><a href="#">我的流量</a></p>
+
+              <p><a href="#">我的宽带信息</a></p>
+
+              <p><a href="#">我已开通业务</a></p>
+            </div>
+          </li>
+          <li class="dropdown above">
+            <a href="#">网上营业厅</a>
+
+            <div class="dropdown-menu">
+              <p><a href="#">选号入网</a></p>
+
+              <p><a href="#">优惠购机</a></p>
+
+              <p><a href="#">移动宽带</a></p>
+
+              <p><a href="#">网上缴费</a></p>
+
+              <p><a href="#">套餐精选</a></p>
+
+              <p><a href="#">流量办理</a></p>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">服务与支持</a>
+
+            <div class="dropdown-menu">
+              <p><a href="#">产品</a></p>
+
+              <p><a href="#">资费专区</a></p>
+
+              <p><a href="#">终端售后点查询</a></p>
+
+              <p><a href="#">国际/港澳台</a></p>
+
+              <p><a href="#">星级服务</a></p>
+
+              <p><a href="#">优惠专区</a></p>
+
+              <p><a href="#">公告与新闻</a></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+<section>
+  <div>
+    <!-- 左侧菜单 -->
+    <div class="menu-box">
+      <div class="menu">
+        <div class="menu-item">
+          <span class="index-icon icon-money"></span>
+
+          <h3 class="menu-title">
+            <a href="#">买手机</a>
+          </h3>
+
+          <p class="menu-link">
+            <a href="#" class="no-color">畅享5S</a>
+            <a href="#">畅玩5X</a>
+          </p>
+          <i class="menu-em"></i>
+
+          <div class="menu-more">
+            <span class="menu-more-bd" style="top: 0px;"></span>
+
+            <div class="more-ban">
+              <a href="#">
+                <img width="178" height="336" src="Images/27092314genz.jpg">
+              </a>
+            </div>
+            <dl>
+              <dt>
+                <b>热点关注</b>
+              </dt>
+              <dd>
+                <a href="#">苹果</a>|
+                <a href="#">三星</a>|
+                <a href="#">小米</a>|
+                <a href="#">华为</a>|
+                <a href="#">HTC</a>|
+                <a href="#">宇龙酷派</a>|
+                <a href="#" class="rose">更多</a>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <b>价格</b>
+              </dt>
+              <dd>
+                <a href="#">1-499</a>|
+                <a href="#">500-999</a>|
+                <a href="#">1000-1999</a>|
+                <a href="#">2000-2999</a>|
+                <a href="#">3000以上</a>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <div class="menu-item">
+          <span class="index-icon icon-pc"></span>
+
+          <h3 class="menu-title">
+            <a href="#">选号码</a>
+          </h3>
+
+          <p class="menu-link">
+            <a href="#">特号</a>
+            <a href="#">靓号</a>
+          </p>
+          <i class="menu-em"></i>
+
+          <div class="menu-more">
+            <span class="menu-more-bd" style="top:69px;"></span>
+
+            <div class="more-ban">
+              <a href="#">
+                <img src="Images/30110041syid.jpg">
+              </a>
+            </div>
+            <dl>
+              <dt>
+                <b>地市号段</b>
+              </dt>
+              <dd>
+                <a href="#">合肥</a>|
+                <a href="#"> 芜湖</a>|
+                <a href="#">蚌埠</a>|
+                <a href="#">淮南</a>|
+                <a href="#">马鞍山</a>|
+                <a href="#">淮北</a>|
+                <a href="#">铜陵</a>|
+                <a href="#">安庆</a>|
+                <a href="#">黄山</a>|
+                <a href="#">阜阳</a>|
+                <a href="#">宿州</a>|
+                <a href="#">滁州</a>|
+                <a href="#">六安</a>|
+                <a href="#">宣城</a>|
+                <a href="#">池州</a>|
+                <a href="#">亳州</a>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <b>靓号规则</b>
+              </dt>
+              <dd>
+                <a href="#">AAAA</a>|
+                <a href="#">AAAB</a>|
+                <a href="#">ABBB</a>|
+                <a href="#">AABB</a>|
+                <a href="#">ABAB</a>|
+                <a href="#">ABCD</a>|
+                <a href="#" class="rose">更多</a>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <b>特殊号码</b>
+              </dt>
+              <dd>
+                <a href="#">尾数为66</a>|
+                <a href="#">尾数为88</a>|
+                <a href="#">尾数为99</a>|
+                <a href="#">号码中不含4</a>|
+                <a href="#" class="rose">更多</a>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <b>生日选号</b>
+              </dt>
+              <dd>
+                <a href="#">01月</a>|
+                <a href="#">02月</a>|
+                <a href="#">03月</a>|
+                <a href="#">04月</a>|
+                <a href="#">05月</a>|
+                <a href="#">06月</a>|
+                <a href="#">07月</a>|
+                <a href="#">08月</a>|
+                <a href="#">09月</a>|
+                <a href="#">10月</a>|
+                <a href="#">11月</a>|
+                <a href="#">12月</a>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <div class="menu-item">
+          <span class="index-icon icon-up"></span>
+
+          <h3 class="menu-title">
+            <a href="#">办宽带</a>
+          </h3>
+
+          <p class="menu-link">
+            <a href="#">续费</a>
+            <a href="#">新装</a>
+          </p>
+          <i class="menu-em"></i>
+
+          <div class="menu-more">
+            <span class="menu-more-bd" style="top:138px;"></span>
+
+            <div class="more-ban">
+              <a href="#">
+                <img src="Images/01182923e6rr.jpg">
+              </a>
+            </div>
+            <dl>
+              <dt>
+                <b>新装宽带</b>
+              </dt>
+              <dd>
+                <a href="#">20M</a>|
+                <a href="#">50M</a>|
+                <a href="#">100M</a>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <b>宽带续费</b>
+              </dt>
+              <dd>
+                <a href="#">包年续约</a>|
+                <a href="#">按月续费</a>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <b>贴心服务</b>
+              </dt>
+              <dd>
+                <a href="#">宽带测速</a>|
+                <a href="#">一键排障</a>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <b>我的宽带</b>
+              </dt>
+              <dd>
+                <a href="#">宽带信息查询</a>|
+                <a href="#">宽带订单查询</a>|
+                <a href="#">宽带交费记录查询</a>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <div class="menu-item">
+          <span class="index-icon icon-heart"></span>
+
+          <h3 class="menu-title">
+            <a href="#">办业务</a>
+          </h3>
+
+          <p class="menu-link">
+            <a href="#">基本套餐</a>
+            <a href="#">数据流量</a>
+          </p>
+          <i class="menu-em"></i>
+
+          <div class="menu-more">
+            <span class="menu-more-bd" style="top:207px;"></span>
+
+            <div class="more-ban">
+              <a href="#">
+                <img src="Images/24160004bw56.jpg">
+              </a>
+              <a href="#">
+                <img src="Images/24160116fmcg.jpg">
+              </a>
+            </div>
+            <dl>
+              <dt>
+                <b>常用功能</b>
+              </dt>
+              <dd>
+                <a href="#">停复机</a>|
+                <a href="#">密码修改</a>|
+                <a href="#">密码重置</a>|
+                <a href="#">来电提醒</a>|
+                <a href="#">volte</a>|
+                <a href="#" class="rose">更多</a>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <b>基础套餐</b>
+              </dt>
+              <dd>
+                <a href="#">4G飞享套餐</a>|
+                <a href="#">4G自选套餐</a>|
+                <a href="#">地市专享套餐</a>|
+                <a href="#" class="rose">更多</a>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <b>流量业务</b>
+              </dt>
+              <dd>
+                <a href="#">数据流量包</a>|
+                <a href="#">夜间流量包</a>|
+                <a href="#">加油包</a>|
+                <a href="#">WLAN套餐</a>|
+                <a href="#" class="rose">更多</a>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <b>数据业务</b>
+              </dt>
+              <dd>
+                <a href="#">彩铃</a>|
+                <a href="#">和阅读</a>|
+                <a href="#">和游戏</a>|
+                <a href="#">和视频</a>|
+                <a href="#">手机报</a>|
+                <a href="#">和包</a>|
+                <a href="#" class="rose">更多</a>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <b>语音/短彩信</b>
+              </dt>
+              <dd>
+                <a href="#">两城一家</a>|
+                <a href="#">国际漫游</a>|
+                <a href="#">长途优惠包</a>|
+                <a href="#">短信计划</a>|
+                <a href="#">亲情短信</a>|
+                <a href="#" class="rose">更多</a>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <div class="menu-item last">
+          <span class="index-icon icon-user"></span>
+
+          <h3 class="menu-title">
+            <a href="#">查信息</a>
+          </h3>
+
+          <p class="menu-link">
+            <a href="#">账单</a>
+            <a href="#">积分</a>
+            <a href="#">密码</a>
+          </p>
+          <i class="menu-em"></i>
+
+          <div class="menu-more">
+            <span class="menu-more-bd" style="top:276px;"></span>
+
+            <div class="more-ban">
+              <a href="#">
+                <img src="Images/241614354flp.png">
+              </a>
+            </div>
+            <dl>
+              <dt>
+                <b>我的查询</b>
+              </dt>
+              <dd>
+                <a href="#">我的详单</a>|
+                <a href="#">我的账单</a>|
+                <a href="#">已订业务</a>|
+                <a href="#">话费查询</a>|
+                <a href="#" class="rose">更多</a>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <b>积分服务</b>
+              </dt>
+              <dd>
+                <a href="#">积分介绍</a>|
+                <a href="#">支付电子券</a>|
+                <a href="#">积分商城</a>|
+                <a href="#">本地服务</a>|
+                <a href="#" class="rose">更多</a>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- banner -->
+    <div class="banner-box" id="banner-box">
+      <div class="banner" id="banner">
+        <ul id="imgs" class="imgs">
+        </ul>
+        <ul id="indexs" class="indexs">
+        </ul>
+      </div>
+    </div>
+    <!-- 右侧快捷区+缴费 -->
+    <div class="shortcut-box">
+      <div class="business-box">
+        <ul class="business-list">
+          <li>
+            <a href="#">
+              <label><img class="lazyload" src="Images/23151927me1y.png"></label>
+              <h6>话费查询</h6>
+            </a>
+            <a href="#">
+              <label><img class="lazyload" src="Images/24161946gz07.png"></label>
+              <h6>我的账单</h6>
+            </a>
+            <a href="#">
+              <label><img class="lazyload" src="Images/24162042kwsl.png"></label>
+              <h6>数据流量</h6>
+            </a>
+            <a href="#">
+              <label><img class="lazyload" src="Images/24162122osm4.png"></label>
+              <h6>积分兑换</h6>
+            </a>
+            <a href="#">
+              <label><img class="lazyload" src="Images/24162157i3wb.png"></label>
+              <h6>已订业务</h6>
+            </a>
+            <a
+              href="#">
+              <label><img class="lazyload" src="Images/24162228huxw.png"></label>
+              <h6>主套餐变更</h6>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="cbox">
+        <ul class="cbox-top">
+          <li>
+            话费充值
+          </li>
+          <li>
+            <a href="#">宽带充值</a></li>
+        </ul>
+        <p>
+          <input class="searchbar" maxlength="13"
+                 onblur="if(this.value==''){this.value='请输入安徽移动手机号';}"
+                 onfocus="if(this.value=='请输入手机号'||this.value=='请输入安徽移动手机号'){this.value='';}" type="text"
+                 value="请输入安徽移动手机号"></p>
+
+        <p class="link-group" id="amountlist">
+          <a href="#">30元</a>
+          <a class="active" href="#">50元</a>
+          <a href="#">100元</a></p>
+
+        <p>
+          <a class="btn btn-primary" href="#" id="_payforself">充值</a>
+          <span class="fillmsg" id="_reldiscount">查询失败</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!--为您推荐-->
+  <div class="recommend-box">
+    <div class="tab">
+      <a href="#">为您推荐</a>
+    </div>
+    <div class="recommend">
+      <ul class="reclist">
+        <li>
+          <a href="#" class="imgs">
+            <span>
+               <img src=" Images/02172505dhat.jpg"/>
+            </span>
+
+            <p>流量快餐包</p>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="imgs">
+            <span>
+               <img src=" Images/26165425sffr.jpg"/>
+            </span>
+
+            <p>宽带升级</p>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="imgs">
+            <span>
+               <img src=" Images/172223351sz4.png"/>
+            </span>
+
+            <p>手厅28号缴费9折</p>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="imgs">
+            <span>
+               <img src=" Images/13184326q3g5.png"/>
+            </span>
+
+            <p>宽带钜惠送电子券</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--楼层--1F-->
+  <div class="floor" id="1F">
+    <div class="floor-header">
+      <div class="floor-name">
+        <p>
+          <span>1F</span>
+          语音资源
+        </p>
+      </div>
+      <div class="floor-tabs">
+        <ul>
+          <li class="active"><a href="#" class="tabs-a">4G套餐</a></li>
+          <li><a href="#" class="tabs-a">长途漫游</a></li>
+          <li><a href="#" class="tabs-a">本地套餐</a></li>
+        </ul>
+        <span class="tabs-base"></span>
+      </div>
+      <a href="#">更多&gt;&gt;</a>
+    </div>
+    <div class="floor-body">
+      <div class="floor-body-left">
+        <a href="#"><img src="Images/24151538wtxy.jpg"/></a>
+      </div>
+      <div class="floor-body-right">
+        <a href="#"><img src="Images/24151719jmek.jpg"/></a>
+      </div>
+      <div class="floor-body-center">
+        <ul class="slide-list">
+          <li><a href="#"><img src="Images/24151939r9kz.jpg"/></a></li>
+          <li><a href="#"><img src="Images/241546015v7y.jpg"/></a></li>
+          <li><a href="#"><img src="Images/24154954mksn.jpg"/></a></li>
+        </ul>
+        <ul class="slide-list">
+          <li><a href="#"><img src="Images/24160054hzt1.jpg"/></a></li>
+          <li><a href="#"><img src="Images/24160234xaul.jpg"/></a></li>
+          <li><a href="#"><img src="Images/21141529oft6.jpg"/></a></li>
+        </ul>
+        <ul class="slide-list">
+          <li><a href="#"><img src="Images/24161138hsxd.jpg"/></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--楼层--2F-->
+  <div class="floor" id="2F">
+    <div class="floor-header">
+      <div class="floor-name">
+        <p>
+          <span>2F</span>
+          流量资费
+        </p>
+      </div>
+      <div class="floor-tabs">
+        <ul>
+          <li class="active"><a href="#" class="tabs-a">数据流量包</a></li>
+          <li><a href="#" class="tabs-a">流量家有包</a></li>
+          <li><a href="#" class="tabs-a">夜间流量</a></li>
+        </ul>
+        <span class="tabs-base"></span>
+      </div>
+      <a href="#">更多&gt;&gt;</a>
+    </div>
+    <div class="floor-body">
+      <div class="floor-body-left">
+        <a href="#"><img src="Images/06105913sddo.jpg"/></a>
+      </div>
+      <div class="floor-body-right">
+        <a href="#"><img src="Images/061100022daj.jpg"/></a>
+      </div>
+      <div class="floor-body-center">
+        <ul class="slide-list">
+          <li><a href="#"><img src="Images/24145529j02a.jpg"/></a></li>
+          <li><a href="#"><img src="Images/241456566g1c.jpg"/></a></li>
+          <li><a href="#"><img src="Images/24150015c8ev.jpg"/></a></li>
+        </ul>
+        <ul class="slide-list">
+          <li><a href="#"><img src="Images/24150235mvlr.jpg"/></a></li>
+          <li><a href="#"><img src="Images/24150354sbx9.jpg"/></a></li>
+          <li><a href="#"><img src="Images/241505383b3j.jpg"/></a></li>
+        </ul>
+        <ul class="slide-list">
+          <li><a href="#"><img src="Images/061440424oqv.jpg"/></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--楼层--3F-->
+  <div class="floor" id="3F">
+    <div class="floor-header">
+      <div class="floor-name">
+        <p>
+          <span>3F</span>
+          宽带专区
+        </p>
+      </div>
+      <a href="#">更多&gt;&gt;</a>
+    </div>
+    <div class="floor-body">
+      <div class="floor-body-left">
+        <a href="#"><img src="Images/1915243316cb.jpg"/></a>
+      </div>
+      <div class="floor-body-right">
+        <a href="#" class="mgt-10"><img src="Images/19153505eamj.png"/></a>
+        <a href="#" class="mgt-10"><img src="Images/18153921smwj.png"/></a>
+        <a href="#" class="mgt-10"><img src="Images/191537501wzu.jpg"/></a>
+      </div>
+      <div class="floor-body-center">
+        <ul class="container">
+          <li><a href="#"><img src="Images/1915293380jj.png"/></a></li>
+          <li><a href="#"><img src="Images/19153221v3ew.jpg"/></a></li>
+          <li><a href="#"><img src="Images/19153340ayps.png"/></a></li>
+          <li><a href="#"><img src="Images/191534185hdu.jpg"/></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

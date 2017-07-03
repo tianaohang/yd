@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>中国移动官方网站</title>
+  <link rel="icon" href="Images/favicon.ico">
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/index.min.css"/>
+</head>
+<body>
+<div id="header"></div>
+<div id="main">
+  <!--商城商品分类-->
+  <div class="shopclass visible-lg-block">
+    <h1>
+      <a href="#">直达移动商城</a>
+    </h1>
+    <ul>
+      <li>
+        <img src="Images/shopclass01.gif">
+        <a href="#">买手机</a>
+      </li>
+      <li>
+        <img src="Images/shopclass02.gif">
+        <a href="#">办套餐</a>
+      </li>
+      <li>
+        <img src="Images/shopclass03.gif">
+        <a href="#">办业务</a>
+      </li>
+      <li>
+        <img src="Images/shopclass05.gif">
+        <a href="#">挑配件</a>
+      </li>
+      <li>
+        <img src="Images/grzx.jpg">
+        <a href="#">个人中心</a>
+      </li>
+    </ul>
+  </div>
+  <!--轮播广告-->
+  <div id="banner" class="banner">
+    <div class="bs-example">
+      <div id="carousel-example-captions" class="carousel slide" data-ride="carousel" data-interval="5000">
+        <div class="carousel-inner"></div>
+        <a class="lbnext" href="#carousel-example-captions" role="button" data-slide="prev"></a>
+        <a class="lbpre" href="#carousel-example-captions" role="button" data-slide="next"></a>
+
+      </div>
+    </div>
+  </div>
+  <!--快捷服务区-->
+  <div class="quickbtn">
+    <div class="btns">
+      <ul>
+        <li id="kjfw_0"><a class="q0" id="kuaijiefuwu_0" href="#">话费查询</a></li>
+        <li id="kjfw_1"><a class="q1" id="kuaijiefuwu_1" href="#">流量查询</a></li>
+        <li id="kjfw_2"><a class="q2" id="kuaijiefuwu_2" href="#">国际/港澳台</a></li>
+        <li id="kjfw_3"><a class="q3" id="kuaijiefuwu_3" href="#">积分兑换</a></li>
+        <li id="kjfw_4"><a class="q4" id="kuaijiefuwu_4" href="#">优惠促销</a>
+
+          <div class="xtip">惠</div>
+        </li>
+        <li id="kjfw_5"><a class="q5" id="kuaijiefuwu_5" href="#">业务办理</a></li>
+      </ul>
+    </div>
+    <form id="cz_form" method="post">
+      <div class="chongzhi">
+        <div class="czjf">
+          <a href="#">充值交费</a>
+          <span>9.98折</span>
+        </div>
+        <div class="ins">
+          <input type="text" id="cz_pho" class="in" maxlength="11" size="11" name="mobileNo"
+                 onfocus="if (this.value=='请输入手机号码') {this.value='';} this.style.color = '#333333';"
+                 onblur="if( this.value=='')this.value='请输入手机号码';" value="请输入手机号码">
+        </div>
+        <div class="insselect" id="insselect">
+          <a id="cz30" href="#">30元</a>
+          <a class="on" id="cz50" href="#">50元</a>
+          <a id="cz100" href="#">100元</a>
+          <a id="cz300" href="#">300元</a>
+          <a id="cz500" href="#">500元</a>
+        </div>
+        <div class="czsubmit">
+          <input type="button" id="cz_sbtn" class="cz" value="立即充值">
+        </div>
+      </div>
+    </form>
+  </div>
+  <!--优惠促销-->
+  <div class="yhcx">
+    <div class="yhcon">
+      <!--左右控制开关-->
+      <div class="yhnext"></div>
+      <div class="yhpre"></div>
+      <!--滚动层-->
+      <div class="yhgundong" id="yhgundong"></div>
+      <!--滚动层结束-->
+    </div>
+  </div>
+  <!--4G专区-->
+  <div class="fourg container">
+    <div class="row">
+      <div class="indextitle">
+        <span>4G专区</span>
+        <a href="#">查看更多 &gt;</a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-md-3 titlepic">
+        <a href="#">
+          <img class="lazy" src="Images/4G_titlepic.jpg" title="4G+ 和更佳">
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-md-3 indexboxcon">
+        <div class="indexbox" id="indexboxcon_1">
+          <a class="lianjie1" href="#">
+            <h1>4G自选套餐</h1>
+
+            <h2>自由搭配 实惠更多</h2>
+          </a>
+          <a class="lianjie2" href="#">
+            <img class="indeximg lazy" src="Images/4G_pic_1.jpg" title="4G自选套餐">
+          </a>
+        </div>
+        <div class="indexbox_bg" id="indexboxcon_4">
+          <a class="lianjie1" href="#">
+            <h1>高清语音（VoLTE）</h1>
+
+            <h2>低延时，高品质，通话上网两不误</h2>
+          </a>
+          <a class="lianjie2" href="#">
+            <img class="indeximg lazy" src="Images/4G_pic_2.jpg" title="高清语音（VoLTE）">
+          </a>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-md-3 indexboxcon">
+        <div class="indexbox_bg" id="indexboxcon_2">
+          <a class="lianjie1" href="#">
+            <h1>4G套餐</h1>
+
+            <h2>加速加量不加价</h2>
+          </a>
+          <a class="lianjie2" href="#">
+            <img class="indeximg lazy" src="Images/4G_pic_3.jpg" title="4G套餐">
+          </a>
+        </div>
+        <div class="indexbox" id="indexboxcon_5">
+          <a class="lianjie1" href="#">
+            <h1>4G飞享套餐</h1>
+
+            <h2>精心搭配 选择更方便</h2>
+          </a>
+          <a class="lianjie2" href="#">
+            <img class="indeximg lazy" src="Images/4G_pic_4.jpg" title="4G飞享套餐">
+          </a>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-md-3 indexboxcon">
+        <div class="indexbox" id="indexboxcon_3">
+          <a class="lianjie1" href="#">
+            <h1>4G流量</h1>
+
+            <h2>流量更丰富，价格更骨感</h2>
+          </a>
+          <a class="lianjie2" href="#">
+            <img class="indeximg lazy" src="Images/4G_pic_5.jpg" title="4G流量">
+          </a>
+        </div>
+        <div class="indexbox_bg hidden-sm" id="indexboxcon_6">
+          <a class="lianjie1" href="#">
+            <h1>4G手机</h1>
+
+            <h2>4G手机　品牌、厂家手机优惠大汇</h2>
+          </a>
+          <a class="lianjie2" href="#">
+            <img class="indeximg lazy" src="Images/4G_pic_6.jpg" title="4G手机">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--买手机-->
+  <div class="buyphone container">
+    <div class="row">
+      <div class="indextitle">
+        <span>买手机</span>
+        <a href="#">查看更多 &gt;</a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-md-3 indexbox">
+        <a class="lianjie1" href="#">
+          <h2>三星On5（G5520）</h2>
+
+          <h3>金属机身 指纹支付</h3>
+        </a>
+
+        <div class="price">
+          <a class="lianjie2" href="#">
+            <p>￥1099</p>
+          </a>
+        </div>
+        <a class="lianjie3" href="#">
+          <img class="indeximg lazy" src="Images/phonepic_1.jpg" title="三星On5（2016）">
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-md-3 indexbox">
+        <a class="lianjie1" href="#">
+          <h2>华为P9（定制32GB版）</h2>
+
+          <h3>5.2英寸高清屏</h3>
+        </a>
+
+        <div class="price">
+          <a class="lianjie2" href="#">
+            <p>￥2988</p>
+          </a>
+        </div>
+        <a class="lianjie3" href="#">
+          <img class="indeximg lazy" src="Images/phonepic_2.jpg" title="华为P9（定制32GB版）">
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-md-3 indexbox">
+        <a class="lianjie1" href="#">
+          <h2>华为G9青春版</h2>
+
+          <h3>溢于“颜”表</h3>
+        </a>
+
+        <div class="price">
+          <a class="lianjie2" href="#">
+            <p>￥1699</p>
+          </a>
+        </div>
+        <a class="lianjie3" href="#">
+          <img class="indeximg lazy" src="Images/phonepic_3.jpg" title="华为G9青春版">
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-md-3 indexbox">
+        <a class="lianjie1" href="#">
+          <h2>华为畅享5S（定制版）</h2>
+
+          <h3>金属机身 轻薄坚韧</h3>
+        </a>
+
+        <div class="price">
+          <a class="lianjie2" href="#">
+            <p>￥1099</p>
+          </a>
+        </div>
+        <a class="lianjie3" href="#">
+          <img class="indeximg lazy" src="Images/phonepic_4.jpg" title="华为畅享5S（定制版）">
+        </a>
+      </div>
+    </div>
+  </div>
+  <!--业务推荐-->
+  <div class="ywtj container">
+    <div class="row">
+      <div class="indextitle">
+        <span>业务推荐</span>
+        <a href="#">查看更多 &gt;</a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-md-3 titlepic">
+        <a id="titlepic_ywtj" href="#">
+          <img id="titlepic_ywtj_img" class="lazy" src="Images/ywtj_titlepic.jpg" title="办流量加油包送流量">
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-md-3 indexboxcon">
+        <div class="indexbox" id="ywtj_1">
+          <a class="lianjie1" href="#">
+            <h1>网上选号</h1>
+
+            <h2>吉祥号码不再一号难求</h2>
+          </a>
+          <a class="lianjie2" href="#">
+            <img class="indeximg lazy" src="Images/ywtj_pic_1.jpg" title="网上选号">
+          </a>
+        </div>
+        <div class="indexbox" id="ywtj_4">
+          <a class="lianjie1" href="#">
+            <h1>安徽移动手机营业厅</h1>
+
+            <h2>每月28日交费9折</h2>
+          </a>
+          <a class="lianjie2" href="#">
+            <img class="indeximg lazy" src="Images/ywtj_pic_2.jpg" title="掌上营业厅">
+          </a>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-md-3 indexboxcon">
+        <div class="indexbox" id="ywtj_2">
+          <a class="lianjie1" href="#">
+            <h1>宽带专区</h1>
+
+            <h2>全家用移动 光纤宽带免费送</h2>
+          </a>
+          <a class="lianjie2" href="#">
+            <img class="indeximg lazy" src="Images/ywtj_pic_3.jpg" title="宽带专区">
+          </a>
+        </div>
+        <div class="indexbox" id="ywtj_5">
+          <a class="lianjie1" href="#">
+            <h1>夜猫族的福音</h1>
+
+            <h2>白菜价享闲时流量包</h2>
+          </a>
+          <a class="lianjie2" href="#">
+            <img class="indeximg lazy" src="Images/ywtj_pic_4.jpg" title="闲时流量包">
+          </a>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-md-3 indexboxcon">
+        <div class="indexbox" id="ywtj_3">
+          <a class="lianjie1" href="#">
+            <h1>美好安徽</h1>
+
+            <h2>吃喝玩乐享折扣&nbsp; 美好生活我服务</h2>
+          </a>
+          <a class="lianjie2" href="#">
+            <img class="indeximg lazy" src="Images/ywtj_pic_5.jpg" title="美好安徽">
+          </a>
+        </div>
+        <div class="indexbox" id="ywtj_6">
+          <a class="lianjie1" href="#">
+            <h1>家庭网</h1>
+
+            <h2>家庭沟通专享 亲情欢乐随行</h2>
+          </a>
+          <a class="lianjie2" href="#">
+            <img class="indeximg lazy" src="Images/ywtj_pic_6.jpg" title="家庭网">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--公告-->
+  <div class="indexgg container">
+    <span>公告：</span>
+    <ul class="row">
+      <li class="col-xs-12 col-md-6">
+        <a class="noticeA" href="#" title="关于发布预防通讯信息诈骗技巧的公告">关于发布预防通讯信息诈骗技巧的公告</a>
+        <span class="hidden-xs">2015-11-27</span>
+      </li>
+      <li class="col-xs-12 col-md-6">
+        <a class="noticeA" href="#" title="“从4G到5G-TDD频谱研讨会”在泰国曼谷召开">“从4G到5G-TDD频谱研讨会”在泰国曼谷召开</a>
+        <span class="hidden-xs">2016-11-15</span></li>
+      <li class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="display:block;">
+        <a class="noticeA" href="#" title="关于属地显示业务下线的公告">关于属地显示业务下线的公告</a>
+        <span class="hidden-xs">2016-04-25</span>
+      </li>
+      <li class="col-xs-12 col-md-6">
+        <a class="noticeA" href="#" title="关于11月15日至11月16日网站系统升级的公告">关于11月15日至11月16日网站系统升级的公告</a>
+        <span class="hidden-xs">2016-11-15</span>
+      </li>
+    </ul>
+    <div class="qhbtn">
+      <a class="left">&lt;</a>
+      <a class="right">&gt;</a>
+    </div>
+  </div>
+  <!--服务相关-->
+  <div class="index-help">
+    <div class="row">
+      <div class="col-xs-12 col-md-5ths help-list">
+        <h2>
+          <span class="col-xs-10 col-md-12">服务渠道</span>
+          <!--当linkgroup显示的时候，将a中的+换为x-->
+          <a class="col-xs-2 visible-xs-block" href="#">+</a>
+        </h2>
+
+        <div class="linkgroup">
+          <a href="#">自助终端</a>
+          <a href="#">10086热线</a>
+          <a href="#">实体营业厅</a>
+          <a href="#">短信营业厅</a>
+          <a href="#">网上营业厅</a>
+          <a href="#">掌上/手机营业厅</a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-5ths help-list">
+        <h2>
+          <span class="col-xs-10 col-md-12">站点导航</span>
+          <a class="col-xs-2 visible-xs-block" href="#">+</a>
+        </h2>
+
+        <div class="linkgroup">
+          <a href="#">MM</a>
+          <a href="#">飞信</a>
+          <a href="#">和包</a>
+          <a href="#">和阅读</a>
+          <a href="#">139邮箱</a>
+          <a href="#">咪咕音乐</a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-5ths help-list">
+        <h2>
+          <span class="col-xs-10 col-md-12">快速导航</span>
+          <a class="col-xs-2 visible-xs-block" href="#">+</a></h2>
+
+        <div class="linkgroup">
+          <a href="#">充值交费</a>
+          <a href="#">账单查询</a>
+          <a href="#">密码重置</a>
+          <a href="#">4G套餐</a>
+          <a href="#">流量加油包</a>
+          <a href="#">移动宽带</a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-5ths help-list">
+        <h2>
+          <span class="col-xs-10 col-md-12">其他服务</span>
+          <a class="col-xs-2 visible-xs-block" href="#">+</a></h2>
+
+        <div class="linkgroup">
+          <a href="#">常用信息帮助</a>
+          <a href="#">在线客服</a>
+          <a href="#">招聘英才</a>
+          <a href="#">投诉建议</a>
+          <a href="#"></a>
+          <a href="#"></a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-5ths help-list">
+        <h2>
+          <span class="col-xs-10 col-md-12">商城服务指南</span>
+          <a class="col-xs-2 visible-xs-block" href="#">+</a></h2>
+
+        <div class="linkgroup">
+          <a href="#">购物指南</a>
+          <a href="#">付款方式</a>
+          <a href="#">物流配送</a>
+          <a href="#">售后服务</a>
+          <a href="#">个人中心</a>
+          <a href="#"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--调查问卷浮层-->
+  <div class="rfu2" id="rfu2">
+    <a href="#">
+      <img class="kf" src="Images/roaming.jpg">
+    </a>
+  </div>
+  <!--在线客服-->
+  <div id="rfu" class="rfu">
+    <img src="Images/kf.gif" class="kf">
+    <div class="cjwt">
+      <a href="#">
+        <img border="0" src="Images/zxzx.gif">
+      </a>
+    </div>
+    <div class="zxzx">
+      <a href="#">
+        <img src="Images/cjwt.gif">
+      </a>
+    </div>
+    <div class="tsjy">
+      <a href="#">
+        <img src="Images/tsjy.gif">
+      </a>
+    </div>
+  </div>
+</div>
+<div id="footer"></div>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
